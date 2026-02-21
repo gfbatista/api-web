@@ -14,7 +14,7 @@ class UserCreator:
         if not select_users or len(select_users) == 0:
             return
 
-        raise Exception("Usuario já cadastrado!")
+        raise Exception("Usuário já cadastrado!")
 
     def __create_new_user(self, person_name: str, age: int, height: float) -> None: # noqa
         self.__users_repository.insert_user(person_name, age, height)
