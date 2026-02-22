@@ -5,7 +5,9 @@ disable=
       C0115, # Missing class docstring
       C0116, # Missing function or method docstring
       w0703, # Catching too general exception Exception
-
+      R0903, # Too few public methods
+      R0904, # Too many public methods
+      
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
 # only in one or another interpreter, leading to false positives when analysed.
