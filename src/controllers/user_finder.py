@@ -22,7 +22,8 @@ class UserFinder(UserFinderInterface):
             formatted_users.append({
                 "id": users.id,
                 "person_name": users.person_name,
-                "age": users.height
+                "age": users.age,
+                "height": f"{users.height:.2f}"
             })
 
         return {
